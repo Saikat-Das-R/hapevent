@@ -1,0 +1,15 @@
+.facebook-div{
+    cursor:pointer;
+    border: solid 1px #285296;
+    margin-top: 3px;
+}
+.facebook-div img{
+
+    height: 28px;
+    width: 28px;
+}
+.facebook-div p{
+    font-size: 14px;
+    margin-top: 2px;
+    text-align:center;
+}

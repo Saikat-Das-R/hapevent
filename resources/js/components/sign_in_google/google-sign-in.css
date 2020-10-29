@@ -1,0 +1,28 @@
+/*.gmail-div div img{*/
+    /*position: relative;*/
+    /*width: 18px;*/
+    /*height: 18px;*/
+    /*float: left;*/
+    /*top: 22%;*/
+    /*left: 6%;*/
+    /*border-radius: 50%;*/
+    /*border: 1px solid #ff0000;*/
+/*}*/
+.gmail-div{
+    cursor: pointer;
+    border: solid 1px #ff0000;
+}
+
+.gmail-div img{
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    border: 1px solid #ff0000;
+}
+
+.gmail-div p{
+    font-size: 14px;
+    margin-top: 2px;
+    text-align:center;
+
+}

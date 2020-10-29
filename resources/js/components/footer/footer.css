@@ -1,0 +1,26 @@
+.footer li{
+    margin-left: 80px;
+    line-height: 1.9;
+}
+.footer a{
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+}
+.footer .footer-cols{
+    padding-top: 2rem;
+    padding-right:2rem;
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    padding-bottom: 20px;
+}
+.footer .footer-cols img{
+    padding-top: 10px;
+    height: 60px;
+    width: 520px;
+}

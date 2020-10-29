@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 430px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.find-event{
+    position: absolute;
+    width: 75%;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.find-event p{
+    font-size: 16px;
+    color:#fff;
+    position: relative;
+    top: 20%;
+    left: 15%;
+}
+
+
+.find-options{
+    position: relative;
+    top: 30%;
+    left: 15%;
+}
+
+.find-options input::-moz-placeholder{
+    text-align: center;
+    size: 36px;
+    color: #ffffff;
+}
+
+
+.find-options input{
+    position: relative;
+    top: 15px;
+    padding: 5px;
+    height: 50%;
+    width: 180px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    border: none;
+
+}
+.find-options>div{
+
+    float: left;
+    width: 220px;
+    height: 61px;
+    border: 1px solid #FFFFFF;
+}
+.find-options i{
+    float: right;
+    color:#fff;
+    margin-top: 22px;
+    margin-right: 10px;
+}

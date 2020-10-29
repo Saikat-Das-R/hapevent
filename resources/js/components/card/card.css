@@ -1,0 +1,87 @@
+.card-container{
+    margin: 8%;
+    cursor: pointer;
+    transition: .5s ease;
+    position: relative;
+    height: 250px;
+    background: #C4C4C4;
+    box-shadow: 0px 21px 18px rgba(0, 0, 0, 0.09);
+}
+.card-container:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 21px 18px rgba(0, 0, 0, 0.09);
+}
+.card-div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+.card-div img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-div >div{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 35%;
+    background: #FFFFFF;
+}
+.card-div div p{
+    text-align:center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.card-content{
+    display: grid;
+    grid-template-columns: .8fr 2fr 1fr;
+    grid-auto-rows: minmax(auto,auto);
+    margin:8px;
+}
+#month_name{
+    text-align:center;
+    font-size:16px;
+    color: #D30000;
+}
+#day{
+    text-align:center;
+    color:#000;
+    font-weight:bold;
+}
+#bar{
+    float:left;
+    width: 0;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+#title{
+    text-align:start;
+    margin-left: 8px;
+    font-size:16px;
+    color:#000;
+}
+#location{
+    text-align:start;
+    margin-left: 8px;
+    font-size:16px;
+    color:rgba(0, 0, 0, 0.5);
+}
+.event-amount{
+    margin:5px;
+    justify-content: space-between;
+}
+#amount{
+    float: right;
+    font-size:22px;
+    margin-right: 2px;
+    color:#000;
+}
+#sign{
+    font-size:22px;
+    float: right;
+    color:#72D462;
+
+}

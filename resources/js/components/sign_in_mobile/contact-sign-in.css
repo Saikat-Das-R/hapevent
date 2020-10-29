@@ -1,0 +1,9 @@
+.phone-div{
+    cursor: pointer;
+    border: solid 1px #00C2FF;
+    margin-top: 3px;
+}
+.phone-div p{
+    margin-top: 2px;
+    font-size: 14px;
+}

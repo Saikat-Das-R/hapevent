@@ -1,0 +1,6 @@
+.card-list{
+    display: grid;
+    grid-auto-rows: minmax(auto,auto);
+    grid-template-columns: repeat(5,1fr);
+    margin: 40px 50px;
+}

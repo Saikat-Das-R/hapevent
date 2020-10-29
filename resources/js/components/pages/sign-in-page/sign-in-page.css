@@ -1,0 +1,127 @@
+
+li{
+    list-style: none;
+}
+.mid-image img{
+    width: 100%;
+    height: 512px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.logo img{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 176px;
+    height: 176px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 50%;
+}
+.card{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: center;
+    width: 336px;
+    height: 429px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.card p{
+    text-align: center;
+}
+.login{
+    position: absolute;
+    margin: 30px;
+}
+.login input::-moz-placeholder{
+    font-weight: bolder;
+    color: #000000;
+}
+
+.login input{
+    position: relative;
+    width: 262px;
+    height: 46px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    border:none;
+}
+.login button{
+    width: 262px;
+    height: 46px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.31);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    border:none;
+}
+.login button{
+    cursor: pointer;
+    background: #72D462;
+}
+.bar{
+    position: relative;
+    top: 45%;
+    left: 12%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr .5fr);
+    width: 135%;
+}
+.bar p{
+    font-size: 16px;
+}
+.bar div{
+    background: #c4c4c4;
+    height: 1px;
+}
+.other-login{
+    position: relative;
+    top: 48%;
+    left: 10%;
+}
+
+.other-login div{
+    width: 262px;
+    height: 46px;
+    color: #000000;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.other-login div img{
+    position: relative;
+
+    float: left;
+    top: 22%;
+    left: 6%;
+    border-radius: 50%;
+}
+
+.other-login div p{
+    position: relative;
+    top: 25%;
+}
+.signup{
+    top: 53%;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.signup p{
+    font-size: 14px;
+}
+.signup a {
+    color: #007faa;
+}
