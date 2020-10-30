@@ -78866,14 +78866,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _components_pages_homepage_homepage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/pages/homepage/homepage */ "./resources/js/components/pages/homepage/homepage.js");
-/* harmony import */ var _components_pages_sign_in_page_sign_in_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/pages/sign-in-page/sign-in-page */ "./resources/js/components/pages/sign-in-page/sign-in-page.js");
-/* harmony import */ var _components_pages_sign_up_page_sign_up_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/sign-up-page/sign-up-page */ "./resources/js/components/pages/sign-up-page/sign-up-page.js");
-/* harmony import */ var _components_pages_welcome_welcome_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/pages/welcome/welcome-page */ "./resources/js/components/pages/welcome/welcome-page.js");
+/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/header/header */ "./resources/js/components/header/header.js");
+/* harmony import */ var _components_pages_sign_in_page_sign_in_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/sign-in-page/sign-in-page */ "./resources/js/components/pages/sign-in-page/sign-in-page.js");
+/* harmony import */ var _components_pages_sign_up_page_sign_up_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/pages/sign-up-page/sign-up-page */ "./resources/js/components/pages/sign-up-page/sign-up-page.js");
+/* harmony import */ var _components_pages_welcome_welcome_page__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/pages/welcome/welcome-page */ "./resources/js/components/pages/welcome/welcome-page.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes React and other helpers. It's a great starting point while
  * building robust, powerful web applications using React + Laravel.
  */
+
 
 
 
@@ -78888,18 +78890,30 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+// const routes = (
+//
+//
+//                 <Route exact path={base_url} component={HomePage} />
+//                 {/*<Route path="/browse_events"/>*/}
+//
+//                 {/*<Route path="/create_events"/>*/}
+//
+//                 {/*<Route  path={base_url+'/sign_in'} component={SignIn}/>*/}
+//
+//    )
 
 
 if (document.getElementById('homepage')) {
   Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/",
-    component: _components_pages_sign_in_page_sign_in_page__WEBPACK_IMPORTED_MODULE_4__["default"]
+    exact: true,
+    path: base_url,
+    component: _components_pages_homepage_homepage__WEBPACK_IMPORTED_MODULE_3__["default"]
   })), document.getElementById('homepage'));
 } else {
   Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     exact: true,
     path: "/",
-    component: _components_pages_welcome_welcome_page__WEBPACK_IMPORTED_MODULE_6__["default"]
+    component: _components_pages_welcome_welcome_page__WEBPACK_IMPORTED_MODULE_7__["default"]
   })), document.getElementById('welcome'));
 }
 
@@ -79513,7 +79527,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_search_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/search/search */ "./resources/js/components/search/search.js");
 /* harmony import */ var _img_happe_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../img/happe_logo.png */ "./resources/js/img/happe_logo.png");
 /* harmony import */ var _img_happe_logo_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_happe_logo_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _pages_sign_in_page_sign_in_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/sign-in-page/sign-in-page */ "./resources/js/components/pages/sign-in-page/sign-in-page.js");
+/* harmony import */ var _pages_sign_up_page_sign_up_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/sign-up-page/sign-up-page */ "./resources/js/components/pages/sign-up-page/sign-up-page.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 var _this = undefined;
 
 /**
@@ -79525,8 +79541,10 @@ var _this = undefined;
 
 
 
+
+
 var Header = function Header() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _img_happe_logo_png__WEBPACK_IMPORTED_MODULE_3___default.a
@@ -79537,15 +79555,22 @@ var Header = function Header() {
         searchField: e.target.value
       });
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
     to: "/browse_events"
-  }, "Browse Events")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, "Browse Events")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
     to: "/create_events"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     "class": "fas fa-plus"
-  }), " Create Events")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
-    to: "/sign_sign_up"
-  }, "SignIn/SignUp"))))));
+  }), " Create Events")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+    to: "/sign_in"
+  }, "SignIn/SignUp"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/browse_events"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/create_events"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    path: "/sign_in",
+    component: _pages_sign_in_page_sign_in_page__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -79597,13 +79622,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_happe_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../img/happe_logo.png */ "./resources/js/img/happe_logo.png");
 /* harmony import */ var _img_happe_logo_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_happe_logo_png__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _sign_in_page_sign_in_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../sign-in-page/sign-in-page */ "./resources/js/components/pages/sign-in-page/sign-in-page.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../header/header */ "./resources/js/components/header/header.js");
-/* harmony import */ var _cardList_card_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../cardList/card-list */ "./resources/js/components/cardList/card-list.js");
-/* harmony import */ var _footer_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../footer/footer */ "./resources/js/components/footer/footer.js");
-/* harmony import */ var _find_event_find_event__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../find_event/find-event */ "./resources/js/components/find_event/find-event.js");
-/* harmony import */ var _homepage_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./homepage.css */ "./resources/js/components/pages/homepage/homepage.css");
-/* harmony import */ var _homepage_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_homepage_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _sign_up_page_sign_up_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sign-up-page/sign-up-page */ "./resources/js/components/pages/sign-up-page/sign-up-page.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../header/header */ "./resources/js/components/header/header.js");
+/* harmony import */ var _cardList_card_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../cardList/card-list */ "./resources/js/components/cardList/card-list.js");
+/* harmony import */ var _footer_footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../footer/footer */ "./resources/js/components/footer/footer.js");
+/* harmony import */ var _find_event_find_event__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../find_event/find-event */ "./resources/js/components/find_event/find-event.js");
+/* harmony import */ var _homepage_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./homepage.css */ "./resources/js/components/pages/homepage/homepage.css");
+/* harmony import */ var _homepage_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_homepage_css__WEBPACK_IMPORTED_MODULE_9__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -79639,6 +79665,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var HomePage = /*#__PURE__*/function (_Component) {
   _inherits(HomePage, _Component);
 
@@ -79660,22 +79687,15 @@ var HomePage = /*#__PURE__*/function (_Component) {
   _createClass(HomePage, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_header_header__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        path: "/browse_events"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        path: "/create_events"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        path: "/sign_sign_up",
-        component: _sign_in_page_sign_in_page__WEBPACK_IMPORTED_MODULE_2__["default"]
-      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_find_event_find_event__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_header_header__WEBPACK_IMPORTED_MODULE_5__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_find_event_find_event__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         className: "upcoming-event"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "upcoming-bar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Up Coming Events")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardList_card_list__WEBPACK_IMPORTED_MODULE_5__["CardList"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Up Coming Events")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardList_card_list__WEBPACK_IMPORTED_MODULE_6__["CardList"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         className: "weekly-event"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "weekly-event-bar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Events This Week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardList_card_list__WEBPACK_IMPORTED_MODULE_5__["CardList"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Events This Week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardList_card_list__WEBPACK_IMPORTED_MODULE_6__["CardList"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         className: "section-work"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "triangle-left"
@@ -79684,7 +79704,7 @@ var HomePage = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: _img_happe_logo_png__WEBPACK_IMPORTED_MODULE_1___default.a,
         alt: ""
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_footer_footer__WEBPACK_IMPORTED_MODULE_6__["default"], null)));
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_footer_footer__WEBPACK_IMPORTED_MODULE_7__["default"], null)));
     }
   }]);
 

@@ -5,7 +5,8 @@ import React from 'react';
 import './header.css'
 import Search from '../../components/search/search';
 import logo from '../../img/happe_logo.png';
-
+ import SignIn from "../pages/sign-in-page/sign-in-page";
+import SignUp from '../pages/sign-up-page/sign-up-page';
 import {
     BrowserRouter as Router,
     Switch,
@@ -24,6 +25,7 @@ const Header =()=> (
             <Search placeholder={'Search Events'}
                     handlechange={(e) => this.setState({searchField: e.target.value})}/>
         </div>
+
         <div>
             <nav>
                 <ul>
@@ -34,13 +36,21 @@ const Header =()=> (
                         <Link to="/create_events"><i class="fas fa-plus"></i> Create Events</Link>
                     </li>
                     <li>
-                        <Link to="/sign_sign_up">SignIn/SignUp</Link>
+                        <Link to='/sign_in'>SignIn/SignUp</Link>
                     </li>
                 </ul>
             </nav>
-
         </div>
+        <Router>
+        <Switch>
+            {/*<Route exact path={base_url} component={HomePage} />*/}
+            <Route path="/browse_events"/>
 
+            <Route path="/create_events"/>
+
+            <Route  path='/sign_in' component={SignIn}/>
+        </Switch>
+        </Router>
     </div>
 
 

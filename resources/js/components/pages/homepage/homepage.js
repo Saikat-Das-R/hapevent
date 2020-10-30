@@ -5,6 +5,7 @@ import React,{Component} from 'react';
 import logo from '../../../img/happe_logo.png';
 
 import SignIn from "../sign-in-page/sign-in-page";
+import SignUp from "../sign-up-page/sign-up-page";
 
 import {
     BrowserRouter,
@@ -32,20 +33,11 @@ export default class HomePage extends Component{
     render() {
         return (
             <div>
-                <BrowserRouter>
+
                     <header>
                         <Header />
-                        <Switch>
-
-                            <Route path="/browse_events"/>
-
-                            <Route path="/create_events"/>
-
-                            <Route path="/sign_sign_up" component={SignIn}/>
-
-                        </Switch>
                     </header>
-                </BrowserRouter>
+
 
                 <section>
                     <FindEvent/>

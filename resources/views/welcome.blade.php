@@ -15,7 +15,5 @@
     <body class="antialiased">
         <div id="homepage"></div>
         <script src="{{asset('js/app.js')}}" ></script>
-
     </body>
-
 </html>

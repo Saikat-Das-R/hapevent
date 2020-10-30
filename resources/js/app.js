@@ -5,8 +5,9 @@
  */
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
 import HomePage from './components/pages/homepage/homepage';
+import Header from './components/header/header';
 import SignIn from './components/pages/sign-in-page/sign-in-page';
 import SignUp from './components/pages/sign-up-page/sign-up-page';
 import Welcome from './components/pages/welcome/welcome-page';
@@ -17,13 +18,22 @@ require('./bootstrap');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+// const routes = (
+//
+//
+//                 <Route exact path={base_url} component={HomePage} />
+//                 {/*<Route path="/browse_events"/>*/}
+//
+//                 {/*<Route path="/create_events"/>*/}
+//
+//                 {/*<Route  path={base_url+'/sign_in'} component={SignIn}/>*/}
+//
+//    )
 
 if (document.getElementById('homepage')){
-    render(
-        <Router >
-            <Route  path="/" component={SignIn} />
-        </Router>,
-        document.getElementById('homepage')
+    render(<Router>
+            <Route exact path={base_url} component={HomePage} />
+        </Router>,document.getElementById('homepage')
     );
 }
 else {
