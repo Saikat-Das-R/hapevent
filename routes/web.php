@@ -16,10 +16,4 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', function () {
 //    return view('welcome');
 //});
-
-Route::get('/', function () {
-    return view('site/pages/homepage');
-});
-//Route::get('/', function () {
-//    return view('site/pages/homepage');
-//});
+Route::view('/{path?}', 'welcome');

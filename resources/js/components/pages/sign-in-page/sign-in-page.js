@@ -7,6 +7,9 @@ import Footer from '../../footer/footer'
 import midImage from '../../../img/happ_header.jpg'
 import logo from '../../../img/happe_logo.png'
 import './sign-in-page.css'
+import {
+    Link
+} from "react-router-dom";
 import {ManualSignIn} from "../../sign_in_manual/manual-sign-in";
 import GoogleSignIn from "../../sign_in_google/google-sign-in";
 import FacebookSignIn from "../../sign_in_facebook/facebook-sign-in";
@@ -16,7 +19,6 @@ export default class SignIn extends Component{
     constructor(){
         super();
         this.state ={
-
         }
     }
 
@@ -49,7 +51,7 @@ export default class SignIn extends Component{
                         <ContactSignIn/>
                     </div>
                     <div class="signup">
-                        <p>Don't have an account? <a href="./signUp.html">Sign up </a>now</p>
+                        <p>Don't have an account? <Link to='/sign_up'>Sign up</Link>now</p>
                     </div>
                 </section>
                 <footer>

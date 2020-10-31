@@ -12,8 +12,17 @@
         {{--<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">--}}
 
     </head>
-    <body class="antialiased">
+    <body >
         <div id="homepage"></div>
         <script src="{{asset('js/app.js')}}" ></script>
     </body>
+    {{--<script type="text/javascript">--}}
+        {{--var site_url = '{{ url("/") }}';--}}
+        {{--var base_url = window.location.pathname;--}}
+        {{--base_url = base_url.slice(0, base_url.lastIndexOf('/'));--}}
+        {{--var storage_url = '{{ Storage::url('/pages/') }}';--}}
+        {{--var course_slug = '{{ Request::segment(2) }}';--}}
+        {{--var lecture_slug = '{{ Request::segment(3) }}';--}}
+    {{--</script>--}}
+
 </html>

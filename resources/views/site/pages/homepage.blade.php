@@ -23,7 +23,7 @@
     var site_url = '{{ url("/") }}';
     var base_url = window.location.pathname;
     base_url = base_url.slice(0, base_url.lastIndexOf('/'));
-    var storage_url = '{{ Storage::url('/pages/') }}';
+    {{--var storage_url = '{{ Storage::url('/pages/') }}';--}}
     {{--var course_slug = '{{ Request::segment(2) }}';--}}
     {{--var lecture_slug = '{{ Request::segment(3) }}';--}}
 </script>
