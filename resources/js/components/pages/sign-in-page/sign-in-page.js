@@ -34,13 +34,13 @@ export default class SignIn extends Component{
                 <div className="logo">
                     <img src={logo}/>
                 </div>
-                <section className="card">
+                <section className="card-sign-in">
                     <div className="login">
                         <input type="email" placeholder="Email Address"/>
                         <input type="password" placeholder="Password"/>
                         <ManualSignIn />
                     </div>
-                    <div className="bar">
+                    <div className="bar-sign-in">
                         <div></div>
                         <p>Or</p>
                         <div ></div>
@@ -50,8 +50,8 @@ export default class SignIn extends Component{
                         <FacebookSignIn/>
                         <ContactSignIn/>
                     </div>
-                    <div class="signup">
-                        <p>Don't have an account? <Link to='/sign_up'>Sign up</Link>now</p>
+                    <div class="sign_in">
+                        <p>Don't have an account? <Link to='/sign_up'>Sign up</Link> now</p>
                     </div>
                 </section>
                 <footer>

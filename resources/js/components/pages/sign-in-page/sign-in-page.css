@@ -15,7 +15,7 @@ li{
     display: block;
     border-radius: 50%;
 }
-.card{
+.card-sign-in{
     position: relative;
     display: block;
     margin-top: 20px;
@@ -29,7 +29,7 @@ li{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
-.card p{
+.card-sign-in p{
     text-align: center;
 }
 .login{
@@ -66,7 +66,7 @@ li{
     cursor: pointer;
     background: #72D462;
 }
-.bar{
+.bar-sign-in{
     position: relative;
     top: 45%;
     left: 12%;
@@ -77,10 +77,10 @@ li{
     grid-template-columns: repeat(3,1fr .5fr);
     width: 135%;
 }
-.bar p{
+.bar-sign-in p{
     font-size: 16px;
 }
-.bar div{
+.bar-sign-in div{
     background: #c4c4c4;
     height: 1px;
 }
@@ -111,7 +111,7 @@ li{
     position: relative;
     top: 25%;
 }
-.signup{
+.sign_in{
     top: 53%;
     position: relative;
     display: block;
@@ -119,9 +119,9 @@ li{
     margin-left: auto;
 
 }
-.signup p{
+.sign_in p{
     font-size: 14px;
 }
-.signup a {
+.sign_in a {
     color: #007faa;
 }

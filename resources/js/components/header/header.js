@@ -22,13 +22,13 @@ const Header =()=> (
             <nav>
                 <ul>
                     <li>
-                        <Link to='/browse_events'>Browse Events</Link>
+                        <Link to='/browse_events' >Browse Events</Link>
                     </li>
                     <li>
                         <Link to="/create_events"><i class="fas fa-plus"></i> Create Events</Link>
                     </li>
                     <li>
-                        <Link to='/sign_in'>SignIn/SignUp</Link>
+                        <Link to='/sign_in' >SignIn/SignUp</Link>
                     </li>
                 </ul>
             </nav>

@@ -40,7 +40,7 @@ export default class SignUp extends Component{
                         <p>Create an account</p>
                         <div ></div>
                     </div>
-                    <div className="other-login">
+                    <div className="other-log_up">
                         <GoogleSignIn/>
                         <FacebookSignIn/>
                         <ContactSignIn/>
@@ -50,7 +50,7 @@ export default class SignUp extends Component{
                     <p>Or</p>
                     <div ></div>
                     </div>
-                    <div className="login">
+                    <div className="log_up">
                     <input type="text" placeholder="First & Last Name"/>
                     <input type="email" placeholder="Work Email"/>
                     <input type="password" placeholder="Password"/>

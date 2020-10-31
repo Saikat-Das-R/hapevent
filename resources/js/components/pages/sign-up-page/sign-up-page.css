@@ -46,19 +46,19 @@ li{
     text-align: center;
     font-size: 14px;
 }
-.login{
+.log_up{
     margin-top: 5px;
     position: relative;
     top: 45%;
-    left: 2%;
+    left: 11%;
 }
-.login input::-moz-placeholder{
+.log_up input::-moz-placeholder{
     font-weight: bolder;
     color: #000000;
 
 }
 
-.login input{
+.log_up input{
     position: relative;
     width: 262px;
     height: 46px;
@@ -102,7 +102,7 @@ li{
     background: #c4c4c4;
     height: 1px;
 }
-.other-login{
+.other-log_up{
     position: absolute;
     top: 5%;
     font-weight: bold;
@@ -110,11 +110,11 @@ li{
     margin-top: 30px;
     left: 11%;
 }
-.other-login p{
+.other-log_up p{
     font-size: 18px;
 }
 
-.other-login div{
+.other-log_up div{
     width: 262px;
     height: 46px;
     color: #000000;
@@ -122,7 +122,7 @@ li{
     border-radius: 16px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.other-login div img{
+.other-log_up div img{
     position: relative;
     float: left;
     top: 22%;
@@ -130,12 +130,12 @@ li{
     border-radius: 50%;
 }
 
-.other-login div p{
+.other-log_up div p{
     position: relative;
     top: 25%;
 }
 .signup{
-    top: 36%;
+    top: 42%;
     margin-right: 25px;
     position: relative;
 
