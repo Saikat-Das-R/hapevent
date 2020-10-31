@@ -10,6 +10,7 @@ import Header from '../../header/header';
 import {CardList} from '../../cardList/card-list'
 import Footer from '../../footer/footer'
 import FindEvent from "../../find_event/find-event";
+import {Helmet} from 'react-helmet'
 import './homepage.css'
 
 
@@ -27,6 +28,9 @@ export default class HomePage extends Component{
         return (
 
                 <div>
+                    <Helmet>
+                        <title>HapEvent | Homepage</title>
+                    </Helmet>
                     <header>
                         <Header />
                     </header>

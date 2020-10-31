@@ -7,13 +7,12 @@ import Footer from '../../footer/footer'
 import midImage from '../../../img/happ_header.jpg'
 import logo from '../../../img/happe_logo.png'
 import './sign-in-page.css'
-import {
-    Link
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {ManualSignIn} from "../../sign_in_manual/manual-sign-in";
 import GoogleSignIn from "../../sign_in_google/google-sign-in";
 import FacebookSignIn from "../../sign_in_facebook/facebook-sign-in";
 import ContactSignIn from "../../sign_in_mobile/contact-sign-in";
+import {Helmet} from 'react-helmet'
 
 export default class SignIn extends Component{
     constructor(){
@@ -25,6 +24,9 @@ export default class SignIn extends Component{
     render(){
         return(
             <div >
+                <Helmet>
+                    <title>HapEvent | Sign In</title>
+                </Helmet>
                 <header>
                     <Header />
                 </header>

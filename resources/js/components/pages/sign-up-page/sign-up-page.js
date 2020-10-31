@@ -10,6 +10,7 @@ import Footer from '../../footer/footer'
 import midImage from '../../../img/happ_header.jpg'
 import logo from '../../../img/happe_logo.png'
 import './sign-up-page.css'
+import {Helmet} from 'react-helmet';
 import {ManualSignIn} from "../../sign_in_manual/manual-sign-in";
 import GoogleSignIn from "../../sign_in_google/google-sign-in";
 import FacebookSignIn from "../../sign_in_facebook/facebook-sign-in";
@@ -23,9 +24,16 @@ export default class SignUp extends Component{
         }
     }
 
+    componentDidMount() {
+        document.title = 'HapEvent | Sign Up';
+    }
+
     render(){
         return(
             <div >
+                <Helmet>
+                    <title>HapEvent | Sign Up</title>
+                </Helmet>
                 <header>
                     <Header />
                 </header>
