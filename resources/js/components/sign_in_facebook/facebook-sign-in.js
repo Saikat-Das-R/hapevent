@@ -4,19 +4,33 @@
 import React,{Component} from 'react';
 import './facebook-sign-in.css'
 import facebook from './../../img/facebook.png';
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 
+const responseFacebook = (response) => {
+    console.log(response);
+}
 export default class FacebookSignIn extends Component{
     constructor(){
         super();
+
     }
 
 
-    render(){
+        render(){
+          //  http://tiny.cc/9bd1tz
         return(
-            <div className ="facebook-div">
-                <img src={facebook} alt="facebook"/>
-                    <p>Log in with Facebook</p>
-            </div>
+            <FacebookLogin
+                appId="381212379741407"
+                fields="name,email,picture"
+                callback={responseFacebook}
+                render={renderProps => (
+                    <div onClick={renderProps.onClick} className ="facebook-div">
+                        <img src={facebook} alt="facebook"/>
+                        <p>Log in with Facebook</p>
+                    </div>
+                )}
+
+                />
         )
     }
 }
