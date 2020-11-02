@@ -9,10 +9,11 @@ import { GoogleLogin, GoogleLoginProps } from 'react-google-login';
 
 const CLIENT_ID = "425456969942-nlb0d6fpp43q1dooktvu7pitsg98uhhf.apps.googleusercontent.com";
 export default class GoogleSignIn extends Component{
-    constructor(props) {
-        super(props);
-
+    constructor({title}) {
+        super();
+        console.log(title)
         this.state = {
+            title,
             isLogined: false,
             accessToken: ''
         };
@@ -49,6 +50,7 @@ export default class GoogleSignIn extends Component{
 
 
     render(){
+        console.log(this.state.title)
         return(
 
 
@@ -57,7 +59,7 @@ export default class GoogleSignIn extends Component{
                                  render={renderProps => (
                                      <div onClick={renderProps.onClick} className="gmail-div" >
                                          <img src={gmail} alt="gmail"/>
-                                         <p>Log in with G-mail id</p>
+                                         <p>{this.state.title}</p>
                                      </div>
                                  )}
                                  onSuccess={ this.login }

@@ -10,9 +10,11 @@ const responseFacebook = (response) => {
     console.log(response);
 }
 export default class FacebookSignIn extends Component{
-    constructor(){
+    constructor({title}){
         super();
-
+        this.state = {
+            title
+        }
     }
 
 
@@ -26,7 +28,7 @@ export default class FacebookSignIn extends Component{
                 render={renderProps => (
                     <div onClick={renderProps.onClick} className ="facebook-div">
                         <img src={facebook} alt="facebook"/>
-                        <p>Log in with Facebook</p>
+                        <p>{this.state.title}</p>
                     </div>
                 )}
 

@@ -152,9 +152,9 @@ export default class SignIn extends Component{
                         <div ></div>
                     </div>
                     <div className="other-login">
-                        <GoogleSignIn/>
-                        <FacebookSignIn/>
-                        <ContactSignIn/>
+                        <GoogleSignIn title={this.props.gmail}/>
+                        <FacebookSignIn title={this.props.facebook}/>
+                        <ContactSignIn title={this.props.phone}/>
                     </div>
                     <div class="sign_in">
                         <p>Don't have an account? <Link to='/sign_up'>Sign up</Link> now</p>

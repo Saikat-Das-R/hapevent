@@ -80198,6 +80198,16 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+var signUpProps = {
+  gmail: "Sign up With G-mail id",
+  facebook: "Sign up with Facebook",
+  phone: "Sign up with phone number"
+};
+var signInProps = {
+  gmail: "Log in With G-mail id",
+  facebook: "Log in  with Facebook",
+  phone: "Log in with phone number"
+};
 
 var App = /*#__PURE__*/function (_Component) {
   _inherits(App, _Component);
@@ -80219,13 +80229,17 @@ var App = /*#__PURE__*/function (_Component) {
         component: _pages_homepage_homepage__WEBPACK_IMPORTED_MODULE_5__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/sign_in",
-        component: _pages_sign_in_page_sign_in_page__WEBPACK_IMPORTED_MODULE_3__["default"]
+        component: function component() {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_sign_in_page_sign_in_page__WEBPACK_IMPORTED_MODULE_3__["default"], signInProps);
+        }
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/browse_event",
         component: _pages_sign_in_page_sign_in_page__WEBPACK_IMPORTED_MODULE_3__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/sign_up",
-        component: _pages_sign_up_page_sign_up_page__WEBPACK_IMPORTED_MODULE_4__["default"]
+        component: function component() {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_sign_up_page_sign_up_page__WEBPACK_IMPORTED_MODULE_4__["default"], signUpProps);
+        }
       })));
     }
   }]);
@@ -81223,7 +81237,13 @@ var SignIn = /*#__PURE__*/function (_Component) {
         className: "bar-sign-in"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Or"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "other-login"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_google_google_sign_in__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_facebook_facebook_sign_in__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_mobile_contact_sign_in__WEBPACK_IMPORTED_MODULE_10__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_google_google_sign_in__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        title: this.props.gmail
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_facebook_facebook_sign_in__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        title: this.props.facebook
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_mobile_contact_sign_in__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        title: this.props.phone
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         "class": "sign_in"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Don't have an account? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
         to: "/sign_up"
@@ -81495,7 +81515,13 @@ var SignUp = /*#__PURE__*/function (_Component) {
         className: "txt-div"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Create an account"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "other-log_up"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_google_google_sign_in__WEBPACK_IMPORTED_MODULE_10__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_facebook_facebook_sign_in__WEBPACK_IMPORTED_MODULE_11__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_mobile_contact_sign_in__WEBPACK_IMPORTED_MODULE_12__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_google_google_sign_in__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        title: this.props.gmail
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_facebook_facebook_sign_in__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        title: this.props.facebook
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sign_in_mobile_contact_sign_in__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        title: this.props.phone
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "bar"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Or"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "log_up"
@@ -81685,15 +81711,25 @@ var FacebookSignIn = /*#__PURE__*/function (_Component) {
 
   var _super = _createSuper(FacebookSignIn);
 
-  function FacebookSignIn() {
+  function FacebookSignIn(_ref) {
+    var _this;
+
+    var title = _ref.title;
+
     _classCallCheck(this, FacebookSignIn);
 
-    return _super.call(this);
+    _this = _super.call(this);
+    _this.state = {
+      title: title
+    };
+    return _this;
   }
 
   _createClass(FacebookSignIn, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       //  http://tiny.cc/9bd1tz
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_facebook_login_dist_facebook_login_render_props__WEBPACK_IMPORTED_MODULE_3___default.a, {
         appId: "381212379741407",
@@ -81706,7 +81742,7 @@ var FacebookSignIn = /*#__PURE__*/function (_Component) {
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
             src: _img_facebook_png__WEBPACK_IMPORTED_MODULE_2___default.a,
             alt: "facebook"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Log in with Facebook"));
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _this2.state.title));
         }
       });
     }
@@ -81803,13 +81839,17 @@ var GoogleSignIn = /*#__PURE__*/function (_Component) {
 
   var _super = _createSuper(GoogleSignIn);
 
-  function GoogleSignIn(props) {
+  function GoogleSignIn(_ref) {
     var _this;
+
+    var title = _ref.title;
 
     _classCallCheck(this, GoogleSignIn);
 
-    _this = _super.call(this, props);
+    _this = _super.call(this);
+    console.log(title);
     _this.state = {
+      title: title,
       isLogined: false,
       accessToken: ''
     };
@@ -81855,6 +81895,9 @@ var GoogleSignIn = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
+      console.log(this.state.title);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_google_login__WEBPACK_IMPORTED_MODULE_3__["GoogleLogin"], {
         clientId: CLIENT_ID,
         render: function render(renderProps) {
@@ -81864,7 +81907,7 @@ var GoogleSignIn = /*#__PURE__*/function (_Component) {
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
             src: _img_gmail_png__WEBPACK_IMPORTED_MODULE_2___default.a,
             alt: "gmail"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Log in with G-mail id"));
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _this2.state.title));
         },
         onSuccess: this.login // onFailure={ this.handleLoginFailure }
         ,
@@ -82052,10 +82095,18 @@ var ContactSignIn = /*#__PURE__*/function (_Component) {
 
   var _super = _createSuper(ContactSignIn);
 
-  function ContactSignIn() {
+  function ContactSignIn(_ref) {
+    var _this;
+
+    var title = _ref.title;
+
     _classCallCheck(this, ContactSignIn);
 
-    return _super.call(this);
+    _this = _super.call(this);
+    _this.state = {
+      title: title
+    };
+    return _this;
   }
 
   _createClass(ContactSignIn, [{
@@ -82063,7 +82114,7 @@ var ContactSignIn = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         "class": "phone-div"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Log in with phone number"));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.title));
     }
   }]);
 

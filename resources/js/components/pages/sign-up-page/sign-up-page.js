@@ -43,6 +43,7 @@ export default class SignUp extends Component{
 
     }
 
+
     //
     onChangeHandler (e){
         const { signUpData } = this.state;
@@ -130,6 +131,7 @@ export default class SignUp extends Component{
 
 
     render(){
+
         return(
             <div >
                 <Helmet>
@@ -150,9 +152,9 @@ export default class SignUp extends Component{
                         <div ></div>
                     </div>
                     <div className="other-log_up">
-                        <GoogleSignIn/>
-                        <FacebookSignIn/>
-                        <ContactSignIn/>
+                        <GoogleSignIn title={this.props.gmail}/>
+                        <FacebookSignIn title={this.props.facebook}/>
+                        <ContactSignIn title={this.props.phone}/>
                     </div>
                     <div className="bar">
                     <div></div>

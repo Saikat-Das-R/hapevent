@@ -5,8 +5,11 @@ import React,{Component} from 'react';
 import './contact-sign-in.css'
 
 export default class ContactSignIn extends Component{
-    constructor(){
+    constructor({title}){
         super();
+        this.state={
+            title
+        }
     }
 
 
@@ -14,7 +17,7 @@ export default class ContactSignIn extends Component{
         return(
 
                 <div class="phone-div">
-                    <p>Log in with phone number</p>
+                    <p>{this.state.title}</p>
                 </div>
 
         )
